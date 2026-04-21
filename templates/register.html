@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4 class="mb-3">User Registration</h4>
+
+<form method="post" class="card p-4 shadow-sm">
+
+<input class="form-control mb-2" name="name" placeholder="Name" required>
+<input class="form-control mb-2" type="number" name="age" placeholder="Age" required>
+
+<select class="form-control mb-2" name="gender" required>
+  <option value="">Gender</option>
+  <option>Male</option>
+  <option>Female</option>
+</select>
+
+<input class="form-control mb-2" name="city" placeholder="City" required>
+<input class="form-control mb-2" name="area" placeholder="Area / Locality">
+
+<select class="form-control mb-2" name="food" required>
+  <option value="">Food Habit</option>
+  <option>Veg</option>
+  <option>Non-veg</option>
+</select>
+
+<select class="form-control mb-2" name="sleep" required>
+  <option value="">Sleep Schedule</option>
+  <option>Early</option>
+  <option>Night</option>
+</select>
+
+<select class="form-control mb-2" name="smoking" required>
+  <option value="">Smoking</option>
+  <option>No</option>
+  <option>Yes</option>
+</select>
+
+<select class="form-control mb-2" name="drinking" required>
+  <option value="">Drinking</option>
+  <option>No</option>
+  <option>Yes</option>
+</select>
+
+<select class="form-control mb-2" name="cleanliness" required>
+  <option value="">Cleanliness Level</option>
+  <option>Low</option>
+  <option>Medium</option>
+  <option>High</option>
+</select>
+
+<select class="form-control mb-2" name="occupation" required>
+  <option value="">Occupation</option>
+  <option>Student</option>
+  <option>Working</option>
+</select>
+
+<select class="form-control mb-3" name="timing" required>
+  <option value="">Study / Work Timing</option>
+  <option>Morning</option>
+  <option>Evening</option>
+  <option>Night</option>
+</select>
+
+<input class="form-control mb-3" type="password" name="password" placeholder="Create Password" required>
+
+<button class="btn btn-success w-100">Register</button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+<h4
+  class="page-title text-center mb-4"
+  style="
+    font-weight: 800;
+    color: #5a67d8;
+    letter-spacing: 0.5px;
+  "
+>
+  🌿 Your Dashboard
+</h4>
+
+<div
+  class="card p-4 mb-4"
+  style="
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  "
+>
+  <div
+    class="info-grid"
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    "
+  >
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>User ID:</b> {{ user.uid }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Name:</b> {{ user.name }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Age:</b> {{ user.age }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Gender:</b> {{ user.gender }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>City:</b> {{ user.city }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Area:</b> {{ user.area }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Food:</b> {{ user.food }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Sleep:</b> {{ user.sleep }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Smoking:</b> {{ user.smoking }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Drinking:</b> {{ user.drinking }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Cleanliness:</b> {{ user.cleanliness }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Occupation:</b> {{ user.occupation }}</div>
+    <div class="info-item" style="background:#eef1ff;padding:10px;border-radius:10px;"><b>Timing:</b> {{ user.timing }}</div>
+  </div>
+</div>
+
+<div class="text-center">
+  <a
+    href="/matches"
+    style="
+      display: inline-block;
+      background: linear-gradient(90deg, #a6b1e1, #b8e0d2);
+      color: #ffffff;
+      padding: 14px 34px;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    "
+  >
+<button>Find My Roommate Match</button>
+  </a>
+</div>

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4 class="mb-3">Admin Panel</h4>
+
+<a href="/admin-logout" class="btn btn-sm btn-danger mb-3">
+  Logout
+</a>
+
+<table class="table table-bordered table-hover">
+  <tr class="table-dark">
+    <th>User ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>City</th>
+    <th>Occupation</th>
+  </tr>
+
+  {% for u in users %}
+  <tr>
+    <td>{{ u[0] }}</td>  <!-- User ID -->
+    <td>{{ u[1] }}</td>  <!-- Name -->
+    <td>{{ u[2] }}</td>  <!-- Age -->
+    <td>{{ u[3] }}</td>  <!-- Gender -->
+    <td>{{ u[4] }}</td>  <!-- City -->
+    <td>{{ u[5] }}</td>  <!-- Occupation -->
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4 class="text-center mb-4">✨ Matching Roommates</h4>
+
+{% if matches|length == 0 %}
+  <div class="card p-4 text-center">
+    <p class="text-muted mb-0">
+      No compatible roommates found yet 🌱
+    </p>
+  </div>
+{% endif %}
+
+<div class="row">
+  {% for user, percent in matches %}
+  <div class="col-md-4 mb-4">
+    <div
+      class="card p-3"
+      style="border-radius:14px; box-shadow:0 8px 20px rgba(0,0,0,0.08);"
+    >
+      <h5 class="mb-1">{{ user.name }}</h5>
+      <p class="text-muted mb-2">{{ user.city }}</p>
+
+      <span
+        style="
+          background:#e6e9f5;
+          padding:6px 14px;
+          border-radius:20px;
+          font-weight:700;
+          color:#4b54c6;
+        "
+      >
+        {{ percent }}% Match
+      </span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="text-center mt-3">
+  <a href="/dashboard" class="btn btn-secondary">
+    ← Back to Dashboard
+  </a>
+</div>
+
+{% endblock %}

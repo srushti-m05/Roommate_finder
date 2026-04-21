@@ -1,0 +1,15 @@
+class User:
+    def __init__(self, row):
+        self.uid = row[0]
+        self.name = row[1]
+        self.age = row[2]
+        self.gender = row[3]
+        self.city = row[4]
+        self.area = row[5]
+        self.food = row[6]
+        self.sleep = row[7]
+        self.smoking = row[8]
+        self.drinking = row[9]
+        self.cleanliness = row[10]
+        self.occupation = row[11]
+        self.timing = row[12]
